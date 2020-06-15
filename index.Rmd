@@ -1,0 +1,1265 @@
+---
+title: "Economie de la santé"
+subtitle: "<br/>ISP Lyon"
+author: "Raphaël SIMON"
+date: "Juin 2020"
+output:
+  xaringan::moon_reader:
+    lib_dir: index_files/libs
+    css: ["default-fonts", "index_files/footer-header.css", "index_files/mycss.css", "default"]
+    seal: false
+    nature:
+      ratio: "16:9"
+      highlightStyle: monokai
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+---
+layout: true
+<div class="my-header"></div>
+
+<div class="my-header-logo"></div>
+
+<div class="my-footer"><span>DES Santé Publique Lyon - Economie de la santé - Juin 2020    
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+Raphaël Simon</span></div> 
+
+
+---
+class: center, middle
+# Economie de la santé
+## .warm-yellow[ISP Lyon - Cours de DES]
+### .royal-blue[Raphaël SIMON]
+### Juin 2020
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+class: center, middle
+count: false
+
+# Sommaire
+
+---
+# .center[Sommaire]
+## Introduction
+## I – Outils destinés à l’analyse d’un contexte économique  
+--
+
+### Efficience, théorème du bien-être et constats en santé
+### L’offre, la demande, équilibre et compétition parfaite  
+---
+# .center[Sommaire]
+## Introduction
+## I – Outils destinés à l’analyse d’un contexte économique
+## II – Echecs du modèle des marchés dans le monde de la santé  
+--
+
+### Le monopole et la distorsion des prix
+### L’aversion au risque et la distorsion de l’assurance 
+### .corporate-red[Le monopsone et la distorsion de l’emploi]
+---
+# .center[Sommaire]
+## Introduction
+## I – Outils destinés à l’analyse d’un contexte économique
+## II – Echecs du modèle des marchés dans le monde de la santé 
+## .corporate-red[III – L’évaluation médico-économique]
+---
+class: center, middle
+count: false
+
+# Introduction
+---
+# .center[Introduction]  
+
+* Cours d’introduction à des concepts TRES généraux d’économie
+--
+
+* __Objectif__: Acquérir des outils de raisonnement
+--
+
+* __Références__: théories d’économie «néo-classique»  
+  * Adaptées pour des profils scientifiques
+--
+
+* L’explication par les marchés et le <i>marginal decision-making</i> sont des outils puissants pour analyser les interactions en santé
+--
+
+* Aucune prétention de perfection dans ce cours: Tous les modèles sont critiquables et ont des contre-exemples  
+&rarr; Trouver ces contre-exemples est une preuve de compréhension !
+---
+
+# .center[A retenir à la fin du cours]  
+* Les principes généraux (en .red[rouge])  
+--
+
+* Les graphiques associés
+--
+
+* Les avantages et inconvénients des études médico-économiques  
+--
+
+&rarr; C’est déjà très bien!  
+---
+class: center, middle
+count: false
+
+# I – Outils d’économie  
+--
+
+## Efficience, théorème du bien-être et constats en santé
+
+---
+# .center[L’économie en santé]
+Economie de la santé = sous-branche de la discipline «économie publique»  
+
+Economie publique = étude du rôle et de la place des interventions du gouvernement dans l’économie  
+
+Deux grands principes sous-tendent la réflexion:  
+--
+
+* L’allocation de ressources se fait par des «marchés» qui opposent les offreurs aux acheteurs face à un bien  
+--
+
+* La consommation et la production de ce(s) bien(s) sont faites par des agents rationnels et poursuivant leur propre-intérêt  
+
+--
+background-image: url(https://image.flaticon.com/icons/svg/786/786415.svg), url(https://image.flaticon.com/icons/svg/929/929430.svg)
+background-size: 2%, 2%
+background-position: 4% 67%, 4% 74%
+Il ne s’agit que d’une des perspectives offertes en économie!    
+
+Pratique pour analyser les dérèglements de marchés  
+
+Pas pratique pour analyser les normes, valeurs, droits, institutions …  
+---
+# .center[Pourquoi?]  
+
+On peut se demander .royal-blue[pourquoi], dans ce cas, .royal-blue[analyser les marchés?]  
+--
+
+* Parce que les outils utilisés sont très polyvalents pour analyser des situations variées  
+--
+
+* Parce qu’on sait les analyser (quantitativement ++) 
+--
+  
+  
+.center[
+__Mais surtout__: .corporate-red[Parce que c’est le langage du pouvoir et des décideurs]
+]
+---
+# .center[L’économie donc] 
+
+Toute explication d’économie commence par des axiomes (suppositions) à propos du réel, et construit un modèle pour tenter de prédire le réel. Cependant:  
+--
+
+* Ils ne sont pas parfaits
+  * On les évalue selon leur apport à l’analyse de phénomènes réels
+--
+
+* Un bon économiste utilise le modèle comme point de départ pour poser des questions, et l’adapte au réel  
+--
+
+* L’échec consiste à essayer de convaincre le reste du monde que son modèle est «vrai»  
+__ou pire__: que c’est la réalité le problème, et donc qu’il faut la changer pour s’adapter au modèle!  
+
+---
+# .center[La santé en économie]
+
+N’est pas un bien (good) directement échangeable via les marchés  
+
+.royal-blue[On obtient de la santé en consommant des «soins», où le soin est un bien échangeable]  
+
+La santé est obtenue par la __consommation de temps et de soins__  
+
+La santé se comporte donc comme une «action» (stock)  
+
+&rarr; L’investissement dans le présent donne des résultats dans le futur  
+--
+
+<br>
+Nous allons voir qu’en l’absence d’action des gouvernements, les marchés du soin se dérèglent et produisent des résultats socialement défavorables
+---
+# .center[La santé en économie]  
+
+Les consommateurs utilisent leurs revenus pour acheter (demande) des biens (soins) dont la consommation leur fournit un niveau «d’utilité».  
+
+* «L’utilité» est la représentation du gain en niveau de santé  
+* La consommation de temps libre ou de nourriture donne aussi de l’utilité  
+* L’utilité provient du gain de santé, et la santé vient de l’achat de soins  
+<br>
+--
+
+Les gains obtenus en investissant dans la «santé» ont deux facettes:  
+--
+
+* La __consommation directe__: être en bonne santé est plus agréable, et améliore le gain d’utilité obtenu par la consommation d’autres biens  
+--
+
+* __Gains monétaires__: être en bonne santé augmente les revenus (p.ex, moins d’arrêts maladie, capacité à travailler)  
+
+---
+# .center[La santé en économie]
+
+Donc demande de santé = demande de soins = demande dérivée  
+
+Peut prendre la forme de demande de soins:  
+* Curatifs (dérivés de la demande pour une santé immédiate)  
+* Préventifs (dérivés de la demande pour une santé future)  
+<br>
+--
+
+Mais par ailleurs, puisque la médecine n’est pas parfaite, il reste une insécurité vis-à-vis de la santé future et des coûts engendrés pour le patient, ce qui est indésirable pour deux raisons:  
+* __L’aversion au risque__: Cf plus loin, amène à préférer le lissage du risque financier et donc à choisir l’assurance santé  
+* Les coûts catastrophiques: Amènent à préférer le partage du risque avec les autres  
+<br>
+--
+
+&rarr; Donc la demande pour l’assurance santé (et non plus les soins) existe aussi comme autre forme de demande dérivée en «santé» (future)  
+---
+# .center[Compétition parfaite]  
+
+Concept de base qu’on va utiliser plus loin pour formuler un modèle d’interprétation de l’économie  
+--
+<br>
+Une industrie est parfaitement compétitive si:  
+
+1) Elle possède un très grand nombre d’offreurs et d’acheteurs  
+--
+name: pc2
+2) Le produit échangé est homogène (les offreurs vendent un produit identique)  
+--
+
+  - 1&2 sous-entend que les comportements des acteurs n’affectent pas le prix du marché  
+
+---
+template: pc2  
+3) L’entrée et la sortie du marché sont gratuites  
+--
+
+4) L’information est complète et parfaite entre tous les acteurs
+---
+name: fwt1
+
+# .center[First Welfare Theorem (FWT)]  
+Ce théorème est la <u>base du raisonnement d’économie néoclassique</u>  
+<br>
+C’est à dire: le modèle initial duquel on déroule les raisonnements économique à la recherche des conditions pour lesquelles il est bafoué et nécessitant l’intervention du gouvernement.  
+--
+<br>
+__4 conditions__:  
+* Compétition parfaite  
+* Pas d’externalités (effets positifs ou négatifs extérieurs, ex tabac, pollution, couverture vaccinale)  
+* Marchés complets (indépendance des probabilités et p<1)  
+* Pas d’asymétrie de l’information (information totale et complète pour tous)  
+<br> 
+Pas de panique, on en reparle plus tard
+
+---
+template: fwt1
+
+Dans la théorie néo-classique, la respect des conditions du FWT amène à .corporate-red[l’efficience globale de l’économie] (dite <i>Pareto efficience</i>)  
+__C’est-à-dire__: la maximisation de la somme des utilités de tous les individus. (cf diapo suivante)
+
+---
+background-image: url(index_files/adds/UPF.png)
+background-position: 2% 65%
+background-size: 55%
+
+# .center[Maximisation d’utilité]  
+.pull-right-40[
+Voici la utility <i>possibility frontier</i> (UPF) de deux individus  
+* Le long de la courbe, la combinaison d’utilités de Paul+Anne est au maximum possible pour la société  
+* La somme des utilités pour la société s’appelle le bien-être social (Social Welfare)  
+&rarr; On appelle ça la Pareto-efficience  
+
+NB: __Aucun préjugé d’équité ici !__
+
+* «C» est Pareto inférieur à «F»  
+* F est inférieur à la zone grisée  
+* E, G et D sont Pareto efficients  
+* F et D/E sont incomparables  
+
+&rarr; Pas d’inquiétude, il s’agit juste de comprendre le dilemme de l’économiste 
+]
+---
+# .center[Pareto efficience]  
+C’est parce que les conditions de compétition parfaite et de Pareto efficience ne tiennent pas compte de l’équité de la distribution des utilités qu’il faut une intervention du gouvernement:  
+--
+
+* Pour organiser la __redistribution__  
+--
+
+* La question de la redistribution est normative en elle-même  
+  * Horizontale vs verticale  
+--
+
+* L’acte de redistribution crée des inefficiences: 1€ de soins gratuits ne donne pas 1€ de consommation, __aucune garantie d’usage approprié__  
+--
+
+* Donc l’optimum économique n’est pas forcément aligné avec __l’optimum__ social  
+--
+
+    &rarr; Toutes ces discussion tournent amène à se poser la question du «trade-off» entre efficient et équitable
+---
+# .center[En somme]
+Nous verrons dans un second temps que:  
+* Les conditions de compétition parfaite (et du premier théorème du bien-être) sont toutes bafouées, créant des distorsions à l’origine de problèmes de fonctionnement qui nécessiteront l’intervention extérieure du gouvernement  
+--
+
+<br>
+* On parle d’échec du marché (market failure), et nous étudierons deux situations:  
+  * Le monopole  
+  * Le monopsone  
+--
+
+<br>
+* Les comportements d’aversion face au risque génèrent aussi des market failures dans le marché de l’assurance, qui sera notre troisième sujet d’étude.  
+
+---
+class: center, middle
+count: false
+
+# I – Outils d’économie  
+## L’offre, la demande, équilibre et compétition parfaite  
+---
+# .center[L’offre et la demande]  
+* Nous allons représenter «l’offre» comme un aggrégat de toute les courbes d’offre des «offreurs» participant au marché  
+--
+
+* De même pour les acheteurs (la demande)  
+--
+
+* Pour les diapos suivantes et jusqu’à la partie II, on ne parle que de marchés «parfaitement compétitifs»  
+--
+
+* Ce sont les nombreuses atteintes à la compétition parfaite dans la santé que nous aborderons en II !
+
+---
+background-image: url(index_files/adds/Demande.png)
+background-position: 2% 55%
+background-size: 50%
+
+# .center[La courbe de demande]
+<br><br><br><br>
+.pull-right[
+* Chaque point de cette courbe représente un consommateur (consumer) et sa propension à payer (willingness to pay – WTP)  
+* Dans un ordre décroissant (le plus haut WTP reçoit le produit en premier)
+]
+
+---
+background-image: url(index_files/adds/Offre.png)
+background-position: 2% 55%
+background-size: 50%
+
+# .center[La courbe de l’offre (supply)]
+<br><br><br>
+.pull-right[
+* Chaque point de cette courbe représente une unité de production d’une entreprise (offreur) pour le prix qu’elle accepte de recevoir en échange (willingness to accept compensation – WTAC)  
+* Dans un ordre croissant de WTAC (le moins cher vend en premier)
+]
+
+---
+background-image: url(index_files/adds/Equilibre.png)
+background-position: 2% 55%
+background-size: 50%
+
+# .center[L’équilibre]
+<br><br><br>
+.pull-right[
+* Le supply «s’ajuste» jusqu’à rencontrer la demande  
+* L’atteinte de l’équilibre = objectif des marchés  
+* Dans les marchés parfaitement compétitifs, l’équilibre s’atteint tout seul  
+* Des changements exogènes peuvent perturber cet équilibre (subvention de l’état, crise …)
+]
+
+---
+background-image: url(index_files/adds/Mouvements.png)
+background-position: 2% 55%
+background-size: 50%
+
+# .center[Mouvements]
+<br><br>
+.pull-right[
+* Un mouvement <b>sur</b> la coube = réponse au changement de prix  
+* Un mouvement <b>de</b> la courbe = réponse à d’autres conditions, comme par exemple un changement de priorités de santé ou une crise sanitaire  
+* A très court terme (avant que le <i>supply</i> puise réagir), le prix s’élève à P’  
+* Puis mouvement sur la courbe du supply qui restabilise le prix à P1
+]
+
+---
+# .center[L’élasticité]  
+«Capacité de réponse au prix»  
+
+2 élasticités qui nous intéressent:  
+
+* Elasticité de la demande face au prix E<sub>d</sub>)  
+  * E<sub>d</sub> = % changement en Q<sub>d</sub> pour 1% changement du prix  
+* Elasticité de l’offre face au prix E<sub>s</sub>  
+  * E<sub>s</sub> = % changement de Q<sub>s</sub> pour 1% changement du prix  
+  
+__Simplement retenir que le concept existe__ 
+
+C’est important car ça nous parle des préférences de la population et des capacités de production de l’industrie
+
+---
+background-image: url(index_files/adds/Welfare_surplus.png)
+background-position: 10% 75%
+background-size: 50%
+
+# .center[Welfare et surplus]  
+Surplus du consommateur (_consumer surplus_ = CS)  
+CS = ∑(WTP – P<sub>e</sub>)  
+
+<br><br>
+.pull-right[Ici, si il y a 6 consommateurs  
+CS = somme des 6 lignes rouges]
+
+---
+background-image: url(index_files/adds/Welfare_surplus2.png)
+background-position: 10% 75%
+background-size: 50%
+
+# .center[Welfare et surplus] 
+Surplus du consommateur (_consumer surplus_ = CS)  
+CS = ∑(WTP – P<sub>e</sub>) 
+
+.pull-right[Mais si N = 5 millions  
+&rarr; Triangle rouge]
+
+---
+background-image: url(index_files/adds/producer_surplus.png)
+background-position: 10% 75%
+background-size: 50%
+# .center[Welfare et surplus]
+Surplus du producteur (_producer surplus_ = PS)  
+CS = ∑(P<sub>e</sub> – WTAC)  
+
+.pull-right[N = 5 millions  
+&rarr; Triangle bleu]
+---
+background-image: url(index_files/adds/welfare_total.png)
+background-position: 10% 75%
+background-size: 50%
+
+# .center[Welfare et surplus]
+Le bien-être social (Welfare = W)  
+W = CS + PS  
+
+.pull-right[
+* C’est une notion arbitraire, mais qui sert de base de raisonnement  
+
+* La théorie des marchés et du bien-être social que l’on présente depuis le début est donc représentée ici  
+
+&rarr; Quand les industries maximisent leurs profit et les consommateurs leur utilité, le bien-être social est à son optimum.
+]
+
+---
+background-image: url(index_files/adds/dwl1.png)
+background-position: 10% 75%
+background-size: 50%
+
+# .center[«Perte sèche»]
+La perte sèche (deadweight loss DWL) correspond aux zones de pertes de bien-être d’un point de vue sociétal dans les marchés non équilibrés  
+DWL = W(possible) – W(actuel)  
+
+.pull-right[
+* Si le gouvernement place un prix maximum sur un bien (un médicament par exemple)  
+* Alors les producteurs ne produisent que la quantité qui correspond à ce prix  
+* W<sub>0</sub>(avant loi) = CS<sub>0</sub> + PS<sub>0</sub> = (A+D)+(B+C+E)  
+* W<sub>1</sub>(après) = CS<sub>1</sub> + PS<sub>1</sub> = (A+B)+C  
+* Donc DWL = W<sub>1</sub> - W<sub>0</sub> = D+E  ![icon](index_files/adds/dwl_icon.png)
+]
+
+---
+# .center[Notions supplémentaires]
+
+Deux notions supplémentaire: __les effets de revenu et de substitution__  
+
+### 1) Effet de revenu (Income effect)  
+
+_Changement de la demande face à un changement de revenus réel, à prix identiques_  
+
+&rarr; Si le prix relatif d’un bien diminue/augmente et que le revenu est le même, les consommateurs sont plus riches/pauvres relativement  
+
+* Face à un bien «normal», la demande augmente avec le revenu  
+* Face à un bien «inférieur», la demande diminue quand le revenu augmente  
+
+&rarr; Quand le gouvernement finance une subvention, le prix «diminue» pour le consommateur donc il a + de revenus disponibles et change sa consommation d’autres biens (normaux augmentent et inférieurs diminuent)
+---
+# .center[Notions supplémentaires]
+
+### 2) Effet de substitution (substitution effect)  
+_Changement de la demande quand les prix relatifs changent, à utilité constante_  
+
+* Quand le différentiel de prix entre deux bien change, les consommateurs vont demander moins de celui qui est relativement plus cher, et plus du relativement moins cher  
+* Même si ça ne change pas leurs revenus  
+
+&rarr; Quand le gouvernement introduit une subvention pour les soins (assurance p.ex):  
+* Le prix relatif des soins diminue donc (à utilité constante) les consommateurs demandent +  
+* Le prix relatif des «autres biens» augmente donc (à utilité constante), les consommateurs demandent moins
+
+---
+class: middle, center
+
+# Questions?
+---
+class: center, middle
+count: false
+
+# II – Echecs du modèle des marchés dans le monde de la santé  
+---
+# .center[Market failure in Healthcare]  
+On s’intéresse aux transgressions faites aux conditions du First Welfare Theorem.  
+
+On rappelle, 4 conditions de réalisation du FWT:  
+* __Compétition parfaite__  
+* Pas d’externalités (effets positifs ou négatifs extérieurs, ex tabac, pollution, couverture vaccinale)  
+* Marchés complets (indépendance des probabilités et p<1)  
+* Pas d’asymétrie de l’information (information totale et complète pour tous)
+
+&rarr; On s’intéresse en particulier aux transgressions à la compétition parfaite
+
+---
+# .center[Quelques définitions]
+.pull-left-40[On va analyser le comportement du marché grâce à deux variables clef:  
+* Le chiffre d’affaire ou .corporate-red[revenu] (_revenue_) qu’on appellera R  
+* Les .corporate-red[coûts] (costs) qu’on appellera C  
+* Le .corporate-red[profit] Π, avec Π = R - C  
+
+&rarr; L’objectif des offreurs (_supply_) est de maximiser le profit P.  
+]
+.pull-right-60[
+Mais, dans la santé on peut penser à d’autres motifs altruistes (non monétaires) comme soigner les gens ou prodiguer des soins de qualité  
+
+Toutefois:
+* En supposant qu’il n’y a pas d’asymétries d’information, le comportement général ressemble à un comportement de maximisation de profit  
+* Ce qui nous conviendra pour la suite (et la simplicité)
+]
+
+.center[«__Outputs are produced using inputs__»]  
+La production d’unités Q vient d’un mix de capital (K) et ressources humaines (L pour labour): Q = f(K,L)  
+K = bâtiments, blocs opératoires, laboratoires, équipement, lits etc …  
+L = infirmiers, médecins, brancardiers etc …  
+Donc les coûts C = αK + βL où α et β sont les prix de K et L  
+
+C’est important pour comprendre l’explication des coûts marginaux dans la suite du cours.
+
+---
+# .center[Perfect competition]  
+Rappel:  
+
+Le modèle de _perfect competition_ n’est pas un modèle réaliste pour décrire la plupart des marchés de la santé  
+Mais, comprendre pourquoi les déviations du modèle de PC créent des inefficiences, il faut comprendre pourquoi PC est efficient
+
+Néanmoins, cela ne veut pas dire qu’il faut imposer la compétition parfaite partout!  
+
+&rarr; Certaines déviations au modèle sont essentielles en santé, comme l’accès limité à la profession médicale ou la régulation de la mise sur le marché des médicaments
+---
+# .center[Revenu marginal]
+__Revenue__ (chiffre d’affaire): dans le contexte de PC, l’entreprise est un price taker, c’est-à-dire qu’elle ne fait pas varier le prix en marché en s’y engageant (choix de Q n’influence pas P)  
+
+* Donc P est constant  
+* Donc le Revenu Marginal (marginal revenue, MR) est constant: __MR<sub>Q</sub> = P__  
+* Comment calculer le revenu total ? 
+--
+
+__P x Q__  
+--
+
+<br>
+Pour les __coûts__, il est conventionnel de modéliser un coût marginal (marginal cost, MC) croissant pour l’entreprise en contexte de compétition parfaite. P.ex : __MC<sub>Q</sub> = 2Q__ 
+
+MC(Q=1) = 2 => Produire 1 unité augmente le coût total de 2  
+MC(Q=2) = 4 => Produire 1 unité augmente le coût total de 4  
+MC(Q=3) = 6 => Produire 1 unité augmente le coût total de 6  
+* Quel est le coût total de produire Q = 3? 
+--
+__TC<sub>Q=3</sub> = 2+4+6 = 12__  
+--
+
+* Quel est le coût total de produire Q=5?
+--
+
+__TC<sub>Q=5</sub> = 2 + 4 + 6 + (2*4) + (2*5) = 2+4+6+8+10 = 30__  
+
+NB: la formule est un peu simpliste, mais dans un soucis de simplification on présente comme ça. En réalité, si MC = 2Q alors TC = Q² (intégrale de MC) ce qui donne des valeurs différentes mais cette différence disparait à des valeurs de Q élevées, ce qui est la situation qui nous intéresse.
+---
+# .center[Profit max: MC = MR]
+* Règle: __les entreprises maximisent leur profit quand MC = MR__ 
+
+* Mais pourquoi comparer les coûts marginaux et non les coûts totaux?  
+
+Ce qu’on a vu:  
+.center[
+MR<sub>Q</sub> = P	et TR<sub>Q</sub> = P x Q  
+MC<sub>Q</sub> = 2Q et	TC<sub>Q</sub> = Q² *]  
+<br><br>
+&rarr; Explication graphique  
+
+.footnotes[*Si vous n’avez pas suivi l’explication, croyez sur parole cette nouvelle info ;)]
+
+---
+background-image: url(index_files/adds/TCTR1.png), url(index_files/adds/MCMR1.png)
+background-size: 30%, 30%
+background-position: 5% 5%, 8% 90%
+
+.pull-right[Selon vous, où est la zone de profit maximale dans ce premier graphique?]
+--
+<br>
+.pull-right[
+* Ce n’est pas Q’, où le profit est nul (TR - TC = 0 !)  
+* C’est l’endroit où l’écart entre TC et TR est le plus grand]
+--
+<br><br><br><br><br>
+.pull-right[C’est plus simple à voir en comparant MR et MC  
+* A partir de l’intersection, la prochaine unité produite coutera marginalement plus cher que son bénéfice marginal  
+* Les profits sont maximisés à MR = MC
+
+Donc, .corporate-red[la caractéristique première d’une entreprise parfaitement compétitive, c’est de choisir de produire une quantité Q correspondant à P = MC]  
+.footnote[Source figure: Dr M. Skellern; LSE]]
+
+---
+# .center[Mais …]
+Pourquoi est-il standard de représenter MC comme croissant?  
+
+* En réalité, MC devrait être représenté comme décroissant à très court terme puis croissant  
+* Pour la simplicité ici, on le montre uniquement croissant (approximation)  
+* Cependant, la logique est identique: il y a un ratio efficient de K:L  
+* Rappel: K est le capital et L la force de travail humaine.  
+--
+
+En général, à court terme K est fixe (on ne peut pas s’acheter une aile d’hopital tous les jours)  
+* Donc pour augmenter la production (Q) on augmente L.  
+* A court terme et quand L est petit, on peut observer des économies (plus d’humains pour gérer la même structure = plus efficace) mais rapidement, le ratio optimal K:L est atteint, et chaque nouvelle unité de L est __marginalement moins efficace__ (on parle de _diminishing returns_).  
+--
+<br>
+  &rarr; Imaginez mettre deux chirurgiens quand il n’y a qu’un bloc  
+  
+Donc le coût marginal de production augmente pour chaque unité additionnelle.
+
+.footnote[NB: Cette explication n’inclue pas encore le temps de formation des travailleurs, ce qui augmente encore MC …]
+---
+# .center[Flashback sur la demande]
+On peut représenter le choix de niveau de consommation Q du côté de la demande en représentant le bénéfice ou gain marginal (marginal benefit, MB) et le coût marginal (MC)  
+
+MB<sub>Q</sub> = gain/bénéfice (utilité) de santé obtenu par la consommation de Q soins.  
+
+MC<sub>Q</sub> = Coût marginal à payer pour consommer ce soin.  
+
+RAPPEL: Dans les conditions idéales, les consommateurs cherche à maximiser l’utilité qu’ils retirent de la consommation des soins.
+
+---
+background-image: url(index_files/adds/MPB.png)
+background-size: 35%
+background-position: 5% 80%
+
+## .center[Flashback sur la demande]
+.pull-right[
+On pose la même situation qu’avec l’entreprise, mais cette fois-ci côté demande.  
+* L’analyse du bénéfice marginal est plus claire  
+* A l’intersection de MB et MC, la prochaine unité de soins consommée fournira un bénéfice (une utilité) inférieur au coût engendré  
+* MC est constant puisque MC = P dans les conditions de compétition parfaite (suffisamment d’offre et de demande pour ne pas affecter le prix)
+.footnote[Source figure: Dr M. Skellern; LSE]]  
+
+
+---
+background-image: url(index_files/adds/equ_marginal.png)
+background-size: 70%
+background-position: 5% 50%
+# .center[Au total]  
+
+<br><br>
+.pull-right[
+* Finalement, on peut représenter la courbe de supply par la courbe de MC (somme des MC des entreprises qui font partie du marché)  
+* De même, la demande est la somme des MB.  
+* P est fixe  
+
+&rarr; L’équilibre existe à Q<sub>S</sub>(P)=Q<sub>D</sub>(P)]
+---
+# .center[Quel est le problème alors?]  
+* Tout ce qui précède était un prérequis à comprendre __le monopole__  
+* Mot-clef: _market power_  
+
+&rarr; Toute situation où le prix qu’une entreprise peut facturer dépend de la quantité qu’elle produit.  
+* Situation très courante en santé !  
+  * Peu d’hôpitaux en compétition dans la même zone  
+  * Les brevets créent un monopole de production/vente  
+  * La règlementation d’entrée crée des barrières  
+  * L’appât des économies d’échelle  
+  
+&rarr; Bien que le modèle du monopole soit extrême, il peut ensuite s’appliquer à toutes ces situation d’existence de market power
+---
+class: middle, center
+
+# Le monopole et la distortion du prix
+---
+# .center[Monopole vs compétition parfaite]  
+* Perfect competition: le choix de Q ne fait pas varier P  
+  * Donc courbe de demande horizontale pour une entreprise donnée, donc le bénéfice moyen (average revenue, AR) est stable, AR = MR = P  
+<br>
+--
+
+* Dans le monopole: la demande est décroissante  
+  * Et plus l’entreprise veut augmenter son output, plus elle doit baisser son prix P pour trouver des acheteurs.  
+  * Donc son revenu moyen (AR) diminue, et son MR diminue de façon plus drastique puisque chaque unité supplémentaire se répercuter sur les unités infra-marginales  
+  * Cela entraine un comportement de restriction de Q pour augmenter P  
+--
+
+<br>
+&rarr; Un graphique pour mieux comprendre 
+---
+background-image: url(index_files/adds/monopoly1.png)
+background-size: 70%
+background-position: 5% 60%
+## .center[Monopole et distortion du prix]  
+.pull-right[
+* La courbe AR indique combien on peut vendre d’unités pour un prix donné. A Q0 = P0  
+* MR nous parle du revenu additionnel que l’on obtient lorsqu’on vend cette unité  
+* P0 - MR0 = perte de bénéfices possibles à cause de la distortion  
+
+&rarr; Pas de panique, c’est le concept le plus difficile à comprendre et il suffit de comprendre le graphique.
+]
+---
+background-image: url(index_files/adds/monopoly2.png)
+background-size: 70%
+background-position: 5% 70%
+## .center[Le choix de Q en position de monopole]  
+
+.pull-right[
+* L’entreprise qui possède le monopole doit aussi faire face à des coûts marginaux (MC)  
+* Comme tous les acteurs, elle veut maximiser son profit à MR = MC  
+* Mais, MR ≠ AR !]  
+--
+
+<br>
+.pull-right[
+* A MC = MR, elle devrait produire Q<sub>1</sub>  
+* Mais, puisqu’elle est seule sur le marché elle peut demander le prix P<sub>1</sub> pour cette quantité !  
+* Q<sub>1</sub> est une inefficience car il reste de la demande non satisfaite]
+
+---
+background-image: url(index_files/adds/monopoly3.png)
+background-size: 70%
+background-position: 5% 70%
+# .center[Impact sur le "Welfare"]  
+
+.pull-right[
+* Le surplus producteur est plus important dans le monopole  
+* Il existe une __perte sèche__ (_DWL_)]
+
+---
+# .center[Autres formes de market power]  
+Il existe d’autres formes de market power  
+
+* L’oligopole: un petit nombre de producteurs (au lieu d’un seul)  
+--
+
+* La compétition monopolistique: Plusieurs producteurs mais d’un produit qui n’est pas un substitut parfait (domaines viticoles p.ex)  
+  * Une forme de monopole émerge de la loyauté à la marque  
+  * Autre forme: même produit mais produit dans des lieux différents  
+* Comment lutter contre ces formes de market power?  
+  * Augmenter le nombre de produteurs  
+  * Proposer des substituts  
+  * Fixer les prix  
+  
+---
+# .center[Problème pour le régulateur]
+* Briser à tout prix les monopoles n’est pas forcément idéal  
+* Il existe des «monopoles naturels»: quand le coût moyen de production diminue si un seul producteur s’occupe de toute la production  
+  * Ex: réseaux ferrés, réseaux électriques. Gros coûts fixes d’entrée de jeu qui prohibe l’entrée de compétiteurs face à une firme déjà installée.  
+--
+
+* Sans régulation, ces monopoles naturels exploitent leur position en augmentant les prix via la restriction de production  
+* Néanmoins, le décideur fait face à un choix entre:  
+  * Favoriser le déploiement/l’installation de ces industries en encourageant les économies d’échelle  
+  * Encourager la compétition pour décourager l’abus de pouvoir sur le marché 
+
+---
+# .center[En santé?]
+* Il n’y a pas de consensus pour dire si la santé est un monopole naturel  
+* Il est certain que certains champs de la santé (soins complexes ou très spécialisés p.ex) ont des caractéristiques de monopole  
+* En général, les coûts moyen sont minimisés par la production en monopole  
+* Donc le régulateur a le même soucis  
+  * D’où la question des hôpitaux de proximité  
+  * D’où la question des brevets  
+  * D’où la question des soins intégrés et surtout des financements intégrés!
+
+---
+# .center[Conclusion]
+Parmi les éléments à considérer entre compétition et économies d’échelle, l’un des principaux est l’impact sur la __qualité__ des soins:  
+
+* Les économies d’échelle amènent-elles aussi de la qualité? P.ex, centres d’excellence.  
+* Quel impact de la compétition sur la qualité?  
+  * Si la compétition se fait sur le prix, c’est souvent au détriment de la qualité
+  * Mais si le régulateur fixe le prix (remboursement), alors en théorie compétition sur la qualité!	
+
+Pas de bonne réponse, les conclusions dans la littérature scientifique sont ambiguës ...
+--
+background-image: url(https://media3.giphy.com/media/4HnRkHk77nStQSGxgi/giphy.gif?cid=ecf05e47abf17562eebd50e7746bc51935aaa7a565b7769d&rid=giphy.gif)
+background-size: 22%
+background-position: 50% 90%
+---
+class: middle, center
+
+# L’aversion au risque et la distorsion de l’assurance
+---
+# .center[L’aversion au risque]  
+## .center[Le concept de diminishing marginal utility]  
+* Derrière la notion de diminution marginale de l’utilité se cache un concept très intéressant et polyvalent pour analyser la distribution et l’utilisation des ressources en santé.  
+* Concept qui doit être intuitif:  
+  * Manger 1 hamburger apporte plus de plaisir/satiété (=utilité) que le 4e burger.  
+  * Offrir une consultation de médecine générale à un individu SDF lui apportera plus d’utilité qu’à un individu suivi régulièrement.  
+  * En somme: plus on consomme d’un bien, moins on en retire d’utilité.  
+* Concept très facilement observé dans le monde réel car très en phase avec la nature humaine  
+
+---
+background-image: url(index_files/adds/OECD_HE-LE.png)
+background-size: 70%
+background-position: 50% 70%
+## .center[Le concept de diminishing marginal utility]  
+.footnote[Source figure: OECD stats]
+---
+# .center[L’assurance en santé]  
+Quand on est malade, le niveau d’utilité diminue pour plusieurs raisons:  
+
+* Être malade fait se sentir mal
+--
+
+* On perd du temps de loisir
+--
+
+* On perd potentiellement des revenus (absence du travail)
+--
+
+* On paye des factures de soins  
+--
+
+&rarr; L’assurance santé vous protège contre le dernier point  
+--
+
+<br>
+L’assurance fonctionne en accumulant de la richesse via tous les souscripteurs afin de compenser (monétairement) ceux qui subissent l’évènement aléatoire dont ils souhaitent se protéger (la maladie)  
+--
+  
+Les assurés accordent de la valeur à l’assurance du fait de leur .red[aversion au risque] (risk aversion), en lien avec la notion de diminishing marginal utility vue précédemment  
+--
+<br>  
+De cette aversion au risque nait:  
+* Une préférence pour le lissage de leur consommation (ils préfèrent avoir une utilité de 10 tout le temps que 0 ou 20).  
+--
+
+* Une demande d’assurance: ils acceptent de payer (_willingness to pay_ WTP) pour éliminer le risque
+
+---
+# .center[Illustration]  
+Un exemple pour mieux illustrer ces concepts:  
+
+Prenons le cas d’une personne (un «agent») sans assurance  
+
+* Dont les revenus sont «y»  
+* Dont la probabilité de tomber malade est «p»  
+* Dont le coût des soins une fois malade est «e»  
+--
+<br>  
+Quand elle n’est pas malade (healthy, H), son niveau de consommation (de son revenu) est: C<sub>H</sub> = y  
+--
+<br>  
+Alors que lorsqu’elle est malade (sick, S), celui-ci est de: C<sub>S</sub> = y - e  
+--
+<br>  
+* On s’intéresse à sa consommation estimée E<sub>C</sub> et le niveau d’utilité estimé qu’elle en retire E(U<sub>C</sub>)
+
+---
+# .center[Illustration]
+.right[Rappel: C<sub>H</sub> = y & C<sub>S</sub> = y - e]
+On a:  
+
+* E<sub>C</sub> = p.C<sub>S</sub> + (1-p).C<sub>H</sub>
+--
+<br>
+* U(E<sub>C</sub>) = p.U(C<sub>S</sub>) + (1-p).U(C<sub>H</sub>)  
+--
+<br>
+En théorie:  
+* A condition qu’il n’y ai pas d’asymétrie d’information (l’assureur ne connait pas la probabilité p)  
+* Et qu’il offre une assurance totale et actuariellement juste (il couvre exactement le risque sans faire de profit)
+
+&rarr; Alors l’agent tirera plus d’utilité du lissage de sa consommation plutôt que de tenter sa chance  
+--
+<br>  
+Ce que cela signifie:  
+
+* Si C est une variable aléatoire et que la courbe d’utilité est concave (DMU), alors U(E<sub>C</sub>) > E(U<sub>C</sub>)  
+
+Autrement dit: «L’utilité de la consommation attendue est supérieure à l’utilité attendue de la consommation»
+--
+<br>  
+.center[__Pas de panique, on va expliquer plus loin__]
+
+---
+# .center[Illustration]
+.right[Rappel: C<sub>H</sub> = y & C<sub>S</sub> = y - e]  
+
+Avec un exemple  
+
+y = 49 ; p = 0,5 ; e = 48 ; U = √𝐶 (fonction concave)  
+--
+
+* Donc C<sub>H</sub> = 49 ; C<sub>S</sub> = y – e = __1__  
+--
+<br>
+* E<sub>C</sub> = 0,5 x 1 + 0,5 x 49 = 0,5 + 24,5 = __25__  
+--
+<br>
+* E(U<sub>C</sub>) = 0,5 x √1 + 0,5 x √49 = 0,5 + 3,5 = __4__  
+--
+<br>
+* U(E<sub>C</sub>) = √25 = __5__  
+
+.center[__U(E<sub>C</sub>) > E(U<sub>C</sub>)__]  
+
+.red[Si la condition de DMU et donc d’aversion au risque est avérée, alors les agents obtiennent une meilleur utilité de l’assurance totale et actuariellement juste]  
+.footnote[(Explication graphique dans la diapo suivante)]
+
+---
+background-image: url(index_files/adds/hi1.png)
+background-size: 80%
+background-position: 10% 80%
+## .center[L’assurance en santé]
+<br><br><br><br><br><br><br><br><br>
+.pull-right-40[
+Rappels:
+y = 49 ; p = 0,5 ; e = 48 ; U = √𝐶  
+* E<sub>C</sub> = 0,5 x 1 + 0,5 x 49 = 0,5 + 24,5 = __25__  
+* E(U<sub>C</sub>) = 0,5 x √1 + 0,5 x √49 = __4__  
+* U(E<sub>C</sub>) = √25 = __5__]
+
+---
+# .center[L’optimum]
+Ce que ce constat implique:  
+
+Imaginons maintenant que l’assurance que l’on achète rembourse une somme €b de nos soins (avec b le nombre d’unités d’assurance achetée) et coûte €m par unité.  
+
+* Coût total assurance = €mb; donc C<sub>H</sub> = y – mb et C<sub>S</sub> = y – mb – e + b  
+
+La solution optimale pour le patient est l’assurance totale (full insurance) soit __b = e__  
+
+En effet, full insurance signifie qu’on lisse la consommation du patient quelle que soit son état  
+
+Donc: C<sub>H</sub> = C<sub>S</sub> ↔ y – mb = y – mb – e + b ↔ .red[b = e]
+---
+# .center[L’optimum]
+.pull-left-70[Une assurance actuariellement juste suppose:  
+
+* Pas de coûts/dépenses administratives et de fonctionnement  
+* L’assurance a un profit de 0  
+* Donc suppose un marché assurantiel parfaitement compétitif  
+* Et surtout, E<sub>(profit)</sub> = 0 ↔ revenu – remboursements = 0 ↔ mb – pb = 0 ↔ .red[mfair = p]  
+
+L’assurance actuariellement juste (m=p) et totale (b=e) offre au consommateur (l’assuré) de vivre en permanence dans son état de consommation attendue soit E<sub>C</sub> = 25 dans notre exemple précédent  
+
+.center[.corporate-red[On élimine l’incertitude !]]
+]
+
+.pull-right-30[Rappel:  
+p= probabilité d’être malade  
+e= coût des soins  
+b= somme remboursée par assureur par unité d’assurance  
+m= prix d’une unité d’assurance 
+]
+#### Démonstration avec m = p = 0,5 ;  b = e = 48  
+C<sub>H</sub> = y – mb = 49 – 0,5 x 48 = 49 – 24 = 25 = E<sub>C</sub>  
+C<sub>S</sub> = y – mb – e + b = 49 – 0,5 x 48 – 48 + 48 = 25 = E<sub>C</sub>  
+CQFD (ou QED en latin!) 
+
+---
+background-image: url(index_files/adds/insurance1.png)
+background-size: 78%
+background-position: 5% 80%
+### .center[Actuariellement juste]
+.pull-right-40[Rappels: y = 49 ; p = 0,5 ; e = 48 ; U = √𝐶  
+E<sub>C</sub> = 0,5 x 1 + 0,5 x 49 = 0,5 + 24,5 = __25__  
+E(U<sub>C</sub>) = 0,5 x √1 + 0,5 x √49 = 0,5 + 3,5 = __4__  
+U(E<sub>C</sub>) = √25 = __5__
+]
+---
+background-image: url(index_files/adds/insurance2.png)
+background-size: 78%
+background-position: 5% 80%
+### .center[Actuariellement __injuste__?]
+<br><br><br><br><br>
+.pull-right-30[
+* En maintenant l’assurance totale, l’assureur peut proposer une offre «injuste» en abusant __l’aversion au risque__  
+* Il peut faire payer à l’assuré pe + l]
+
+---
+# .center[Echecs du marché de l’assurance]
+Rappel:  
+
+* Tout ce cours est lu avec le prisme du courant de pensée de l’économie dite néo-classique 
+* Les analyses se basent sur les comportements de marchés  
+* Le théorème central est le premier théorème du bien-être 
+* S’il est respecté, il amène en théorie un distribution efficiente (Pareto) des ressources et des utilités.  
+--
+<br>
+
+__Conditions du First Welfare Theorem__
+
+* Compétition parfaite  
+--
+<br>
+  * Brisé par la taille des assureurs, presque statut monopole  
+--
+<br>  
+* Pas d’externalités  
+--
+<br>
+  * Brisé par des les vaccins, les maladies transmissibles  
+--
+<br>
+* Marchés complets (indépendance des probabilités et p<1)  
+--
+<br>
+  * Maladies chroniques, maladies héréditaires, maladies transmissibles  
+--
+<br>
+* Pas d’asymétrie de l’information (information totale et complète pour tous)  
+--
+<br>
+  * Sélection adverse / .red[antisélection] (adverse selection)  
+--
+<br>
+  * .red[Aléa moral] (moral hazard) 
+
+---
+# .center[Antisélection]
+Causé par les caractéristiques cachées  
+
+* Quand le «profil» d’un acheteur ou d’un vendeur n’est pas observable pour l’autre. P.ex: l’assureur ne peut pas savoir si la personne en face de lui est à risque de faire un AVC  
+* .corporate-red[L’antisélection]: quand dans un marché, __les profils les moins «désirables» sont représentés de façon disproportionnée__ du fait de leurs caractéristiques cachées.
+<br>  
+--
+
+Exemple historique Akerlof (1970): le marché des voitures d’occasion aux USA<br><br>  
+* La qualité d’une voiture d’occasion est connue du vendeur mais pas de l’acheteur  
+--
+  
+* L’acheteur estime son prix (WTP!) en se basant sur ce qu’il sait de la qualité moyenne des voitures d’occasion  
+--
+  
+* A ce prix, seules les voitures de basse-qualité se vendent  
+--
+  
+* Mais les acheteurs s’en doutent et revoient leur prix d’achat à la baisse  
+--
+  
+* Les vendeurs anticipent ce comportement aussi et les produits de haute qualité sortent du marché  
+
+&rarr; Ainsi de suite jusqu’à effondrement du marché (market collapse)
+
+---
+# .center[Antisélection]
+* Ce modèle peut s’appliquer aux marchés de l’assurance  
+* Mais cette fois-ci, c’est le profil de l’acheteur qui est masqué.  
+  * Donc la probabilité p qu’il tombe malade  
+  
+NB: Une fois encore, ces affirmations sont très peu réalistes!  
+  * Il est évident que les assureurs ont des options pour estimer le risque p de l’individu  
+  * L’idée générale est que le patient connait mieux son risque que l’assureur  
+
+Par ailleurs, des restrictions légales (interdiction de discriminer etc.) empêchent les assureurs d’utiliser les infos qu’ils auraient trouvé sur leurs clients  
+
+* On peut cependant supposer que l’assureur connait la __distribution du risque dans la population totale__ ("facile" via épidémiologie)
+
+---
+# .center[Antisélection]
+Exemple: les coûts annuels des soins pour une population varient entre 500€ et 1000€  
+--
+
+* Perspective de l’assureur: chaque individu peut coûter entre 500€ et 1000€  
+  * Donc en moyenne, 750€ de coût attendus par individu  
+  * Impossibilité de distinguer les «hauts-risque» des «bas-risque»  
+--
+ 
+* MAIS chaque individu connait son propre «profil de risque»  
+  &rarr; A donc une idée de ses coûts futur (pas parfaitement sinon n’acheterait pas)  
+<br>
+--
+ 
+Imaginons que l’assureur propose un __contrat d’assurance totale à un prix actuariellement juste__, donc pour le coût du coût attendu de la population (750€)  
+.royal-blue[__Qui achète?__]
+
+---
+# .center[Antisélection]
+* __Pas uniquement les gens qui ont un profil qui coute ≥ 750€ !__
+--
+
+* Du fait de l’aversion au risque, certains « bas-risque » vont quand même participer!  
+* La question est donc, combien le feront?
+--
+
+* Deux possibilités:
+--
+
+  * On arrive à un pooling equilibrium: Tous les profils de risque participent  
+  * On arrive à un separating equilibrium: Les risques haut et bas se comportent différemment  
+
+---
+### .center[Cas du _separating equilibrium_]
+On répète l’exemple des voitures  
+
+* Les risques bas n’achètent pas d’assurance à ce prix
+--
+
+* Les pertes de revenus pour l’assureur l’obligent à hausser le premium
+--
+
+* Du coup d’autres participants quittent le système, etc  
+--
+
+&rarr; C’est la __spirale mortelle de l’assurance santé__ (death spiral)  
+
+Ce résultat est .red[socialement inefficient] (car market failure), car le résultat socialement efficient est l’assurance totale pour tout le monde
+--
+
+### .center[Cas du _pooling equilibrium_]
+Survient si les profils de risque les plus bas sont <u>si averses au risque</u> qu’ils achètent l’assurance au prix moyen actuariellement juste
+--
+
+* Résultat __socialement efficient__ puisque tout le monde est totalement assuré
+--
+
+* Equitable?
+--
+
+* Rappel: l’efficience sociale dans ce courant de pensée ne concerne que la quantité produite/consommée et non pas l’équité.
+--
+
+* Est-ce que la redistribution est équitable ou inéquitable?
+
+---
+## .center[Exemple: The Harvard Death Spiral]
+Avant 1995, les employés de l’université d’Harvard pouvaient choisir parmi plusieurs plans d’assurance à la générosité variable à un coût pratiquement identique entre eux  
+
+La plupart choisissaient donc le plan le plus généreux en termes de remboursements => pooling equilibrium avec (presque) assurance totale  
+
+En 1995, Harvard commence à faire porter une part des coûts additionnels du plan le plus généreux aux employés
+--
+
+* Les plus healthy  sortent du plan et souscrivent les plans les moins chers
+--
+
+* Le coût par patient augmentant, le prix du plan le plus généreux augmente  
+--
+
+&rarr; Spirale de la mort, en 1998 le plan le plus généreux n’est même plus proposé
+
+---
+name: mh1
+# .center[L’aléa moral]
+.pull-left-40[
+#### Définitions
+* __Action masquée__: quand un agent peut effectuer une action non observable par le «principal» mais qui peut influencer ses revenus  
+* .corporate-red[Aléa moral] (moral hazard, MH): Changement de comportement indésirable (action masquée) résultant d’une forme de protection vis-à-vis des conséquences de ce comportement  
+
+Donc, dans le contexte de l’assurance: L’aléa moral est le <u>changement indésirable de comportement résultant de la protection face au risque</u> (financier)] 
+
+---
+background-image: url(index_files/adds/mh_table.png)
+background-size: 75%
+background-position: 92% 90%
+# L’aléa moral
+_Multidimensionnel_
+---
+template: mh1
+
+.pull-right-60[NB: L’aléa moral est plus probable comme venant des offreurs, puisque pour les patients ça signifie qu’il faut être malade pour entreprendre ces actions or:
+* Etre malade est déplaisant, et cet état réduit l’utilité du patient dans des dimensions pour lequel il n’est pas assuré  
+* La «valeur» des soins pour une personne non malade est proche de zéro
+
+A quel point un système de santé est affecté par de l’aléa moral?  
+* Quelles capacité d’audit sont disponibles (pour vérifier l’état du patient)?  
+* Quel «coût» de prétendre être malade (ou vraiment l’être)? (Faut-il se couper la jambe ou dire qu’on a mal du dos)  
+* Quel niveau de générosité de l’assurance (partielle vs totale?)]
+
+---
+# .center[Aléa moral: la relation agent-principal]
+L’aléa moral est un problème de pouvoir qui survient dans le marché de l’assurance santé  
+
+* Il y a un troisième participant au marché, l’assureur (public ou privé)  
+* Principal = Assureur  
+* Agent = médecin et patient  
+* L’assureur accepte de couvrir le coût des soins et veut que le médecin et le patient prennent des actions pour s’assurer que les coûts ne soient pas excessifs  
+
+Ce qui est un contraste avec les problèmes de la relation médecin-patient (aussi une relation agent-principal, mais non abordée dans ce cours)  
+
+.royal-blue[Propositions de solutions à ces deux problèmes? (MH et AS)]  
+
+.footnote[cf PID]
+
+---
+# .center[Politiques de santé pour lutter contre l’aléa moral]
+1) Pour lutter contre l’aléa moral côté demande (consommateurs)  
+* Partage des coûts (co-assurance, co-paiement, franchise, catastrophe)  
+  * Valable seulement si la demande est coût élastique, et que l’aléa moral est un problème significatif (ce qui n’est pas souvent le cas!)  
+  * Peu de preuves pour soutenir ces points  
+  * Suppose des agents rationnels qui répondent de façon adéquate  
+  * L’essor de l’économie comportementale suggère que ce n’est pas toujours le cas …
+* Mesures non «monétaires»:  
+  * Le «gardien»: le médecin généraliste peut bloquer l’accès au reste du système de soins (UK, NHS)  
+  * Temps/liste d’attente: pensez à l’attente au urgence, tri selon urgence  
+  &rarr; On espère que les patients qui sont là pour rien vont refuser d’attendre  
+  &rarr; Preuves mitigées sur ce dernier point: Oui, les patients qui ont les moyens d’aller voir ailleurs le font, mais les autres subissent parfois le temps d’attente.  
+
+2) Pour lutter contre l’aléa moral «supply-side»
+* Partage de coûts (plusieurs modèles, remboursement prospectif ++)  
+* Rémunérer la performance/qualité (ROSP/IFAQ/Art51 FR, BPT UK, CMS Advanced payments models US ...)
+
+---
+# .center[Politiques de santé pour lutter contre l’antisélection]
+Deux grandes formes de réponse à l’antisélection:  
+
+1) Compulsion: Forcer les profils de risque «faible» à acheter de l’assurance (comme chez nous)  
+--
+
+<br>2) Screening: Offrir des contrats partiels d’assurance pour attirer les risques bas = ils reçoivent au moins une forme d’assurance
+--
+
+* Plus acceptable que de les voir quitter le marché assurantiel 
+--
+
+* Reste socialement inefficient puisque pas d’assurance totale
+
+---
+class: center, middle
+
+# On s’arrête là?
+--
+
+## Questions?
+--
+
+raphaeljack.simon@gmail.com
+--
+background-image: url(https://media2.giphy.com/media/1jkVi22T6iUrQJUNqk/giphy.gif?cid=ecf05e474c136ca5e4ede9746494e924266ffc67d180b8ea&rid=giphy.gif)
+background-size: cover
+---
+
+
+
+
+
+
+
+
+
+
