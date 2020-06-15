@@ -1026,7 +1026,7 @@ __Conditions du First Welfare Theorem__
   * Brisé par des les vaccins, les maladies transmissibles  
 --
 <br>
-* Marchés complets (indépendance des probabilités et p<1)  
+* Marchés complets (indépendance des probabilités et p < 1)  
 --
 <br>
   * Maladies chroniques, maladies héréditaires, maladies transmissibles  
