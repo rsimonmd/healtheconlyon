@@ -456,7 +456,6 @@ W = CS + PS
 
 .pull-right[
 * C’est une notion arbitraire, mais qui sert de base de raisonnement  
-
 * La théorie des marchés et du bien-être social que l’on présente depuis le début est donc représentée ici  
 
 &rarr; Quand les industries maximisent leurs profit et les consommateurs leur utilité, le bien-être social est à son optimum.
@@ -578,9 +577,9 @@ __P x Q__
 <br>
 Pour les __coûts__, il est conventionnel de modéliser un coût marginal (marginal cost, MC) croissant pour l’entreprise en contexte de compétition parfaite. P.ex : __MC<sub>Q</sub> = 2Q__ 
 
-MC(Q=1) = 2 => Produire 1 unité augmente le coût total de 2  
-MC(Q=2) = 4 => Produire 1 unité augmente le coût total de 4  
-MC(Q=3) = 6 => Produire 1 unité augmente le coût total de 6  
+MC(Q=1) = 2 &rarr; Produire 1 unité augmente le coût total de 2  
+MC(Q=2) = 4 &rarr; Produire 1 unité augmente le coût total de 4  
+MC(Q=3) = 6 &rarr; Produire 1 unité augmente le coût total de 6  
 * Quel est le coût total de produire Q = 3? 
 --
 __TC<sub>Q=3</sub> = 2+4+6 = 12__  
@@ -699,6 +698,7 @@ background-position: 5% 50%
 &rarr; Bien que le modèle du monopole soit extrême, il peut ensuite s’appliquer à toutes ces situation d’existence de market power
 ---
 class: middle, center
+count: false
 
 # Le monopole et la distortion du prix
 ---
@@ -722,9 +722,9 @@ background-size: 70%
 background-position: 5% 60%
 ## .center[Monopole et distortion du prix]  
 .pull-right[
-* La courbe AR indique combien on peut vendre d’unités pour un prix donné. A Q0 = P0  
+* La courbe AR indique combien on peut vendre d’unités pour un prix donné. A Q<sub>0</sub> = P<sub>0</sub>  
 * MR nous parle du revenu additionnel que l’on obtient lorsqu’on vend cette unité  
-* P0 - MR0 = perte de bénéfices possibles à cause de la distortion  
+* P<sub>0</sub> - MR<sub>0</sub> = perte de bénéfices possibles à cause de la distortion  
 
 &rarr; Pas de panique, c’est le concept le plus difficile à comprendre et il suffit de comprendre le graphique.
 ]
@@ -963,18 +963,18 @@ Donc: C<sub>H</sub> = C<sub>S</sub> ↔ y – mb = y – mb – e + b ↔ .red[b
 * Pas de coûts/dépenses administratives et de fonctionnement  
 * L’assurance a un profit de 0  
 * Donc suppose un marché assurantiel parfaitement compétitif  
-* Et surtout, E<sub>(profit)</sub> = 0 ↔ revenu – remboursements = 0 ↔ mb – pb = 0 ↔ .red[mfair = p]  
+* Et surtout, E<sub>(profit)</sub> = 0 ↔ revenu – remboursements = 0 ↔ mb – pb = 0 ↔ .red[m<sub>fair</sub> = p]  
 
-L’assurance actuariellement juste (m=p) et totale (b=e) offre au consommateur (l’assuré) de vivre en permanence dans son état de consommation attendue soit E<sub>C</sub> = 25 dans notre exemple précédent  
+L’assurance actuariellement juste (m = p) et totale (b = e) offre au consommateur (l’assuré) de vivre en permanence dans son état de consommation attendue soit E<sub>C</sub> = 25 dans notre exemple précédent  
 
 .center[.corporate-red[On élimine l’incertitude !]]
 ]
 
 .pull-right-30[Rappel:  
-p= probabilité d’être malade  
-e= coût des soins  
-b= somme remboursée par assureur par unité d’assurance  
-m= prix d’une unité d’assurance 
+p = probabilité d’être malade  
+e = coût des soins  
+b = somme remboursée par assureur par unité d’assurance  
+m = prix d’une unité d’assurance 
 ]
 #### Démonstration avec m = p = 0,5 ;  b = e = 48  
 C<sub>H</sub> = y – mb = 49 – 0,5 x 48 = 49 – 24 = 25 = E<sub>C</sub>  
@@ -999,7 +999,7 @@ background-position: 5% 80%
 <br><br><br><br><br>
 .pull-right-30[
 * En maintenant l’assurance totale, l’assureur peut proposer une offre «injuste» en abusant __l’aversion au risque__  
-* Il peut faire payer à l’assuré pe + l]
+* Il peut faire payer à l’assuré p<sub>e</sub> + l]
 
 ---
 # .center[Echecs du marché de l’assurance]
@@ -1103,7 +1103,7 @@ Imaginons que l’assureur propose un __contrat d’assurance totale à un prix 
 * __Pas uniquement les gens qui ont un profil qui coute ≥ 750€ !__
 --
 
-* Du fait de l’aversion au risque, certains « bas-risque » vont quand même participer!  
+* Du fait de l’aversion au risque, certains «bas-risque» vont quand même participer!  
 * La question est donc, combien le feront?
 --
 
@@ -1150,7 +1150,7 @@ Survient si les profils de risque les plus bas sont <u>si averses au risque</u> 
 ## .center[Exemple: The Harvard Death Spiral]
 Avant 1995, les employés de l’université d’Harvard pouvaient choisir parmi plusieurs plans d’assurance à la générosité variable à un coût pratiquement identique entre eux  
 
-La plupart choisissaient donc le plan le plus généreux en termes de remboursements => pooling equilibrium avec (presque) assurance totale  
+La plupart choisissaient donc le plan le plus généreux en termes de remboursements &rarr; pooling equilibrium avec (presque) assurance totale  
 
 En 1995, Harvard commence à faire porter une part des coûts additionnels du plan le plus généreux aux employés
 --
