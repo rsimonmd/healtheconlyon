@@ -85,7 +85,7 @@ count: false
 * __Objectif__: Acquérir des outils de raisonnement
 --
 
-* __Références__: théories d’économie «néo-classique»  
+* __Références__: théories d’économie «classique»  
   * Adaptées pour des profils scientifiques
 --
 
@@ -250,7 +250,7 @@ template: pc2
 name: fwt1
 
 # .center[First Welfare Theorem (FWT)]  
-Ce théorème est la <u>base du raisonnement d’économie néoclassique</u>  
+Ce théorème est la <u>base du raisonnement d’économie classique</u>  
 <br>
 C’est à dire: le modèle initial duquel on déroule les raisonnements économique à la recherche des conditions pour lesquelles il est bafoué et nécessitant l’intervention du gouvernement.  
 --
@@ -266,7 +266,7 @@ Pas de panique, on en reparle plus tard
 ---
 template: fwt1
 
-Dans la théorie néo-classique, la respect des conditions du FWT amène à .corporate-red[l’efficience globale de l’économie] (dite <i>Pareto efficience</i>)  
+Dans la théorie classique, la respect des conditions du FWT amène à .corporate-red[l’efficience globale de l’économie] (dite <i>Pareto efficience</i>)  
 __C’est-à-dire__: la maximisation de la somme des utilités de tous les individus. (cf diapo suivante)
 
 ---
@@ -979,7 +979,7 @@ m = prix d’une unité d’assurance
 #### Démonstration avec m = p = 0,5 ;  b = e = 48  
 C<sub>H</sub> = y – mb = 49 – 0,5 x 48 = 49 – 24 = 25 = E<sub>C</sub>  
 C<sub>S</sub> = y – mb – e + b = 49 – 0,5 x 48 – 48 + 48 = 25 = E<sub>C</sub>  
-CQFD (ou QED en latin!) 
+CQFD! 
 
 ---
 background-image: url(index_files/adds/insurance1.png)
@@ -1009,7 +1009,7 @@ background-position: 95% 5%, 5% 80%
 # .center[Echecs du marché de l’assurance]
 Rappel:  
 
-* Tout ce cours est lu avec le prisme du courant de pensée de l’économie dite néo-classique 
+* Tout ce cours est lu avec le prisme du courant de pensée de l’économie dite classique 
 * Les analyses se basent sur les comportements de marchés  
 * Le théorème central est le premier théorème du bien-être 
 * S’il est respecté, il amène en théorie un distribution efficiente (Pareto) des ressources et des utilités.  
@@ -1232,7 +1232,7 @@ Ce qui est un contraste avec les problèmes de la relation médecin-patient (aus
 # .center[Politiques de santé pour lutter contre l’antisélection]
 Deux grandes formes de réponse à l’antisélection:  
 
-1) Compulsion: Forcer les profils de risque «faible» à acheter de l’assurance (comme chez nous)  
+1) Obligation: Forcer les profils de risque «faible» à acheter de l’assurance (comme chez nous)  
 --
 
 <br>2) Screening: Offrir des contrats partiels d’assurance pour attirer les risques bas = ils reçoivent au moins une forme d’assurance
