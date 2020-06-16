@@ -238,7 +238,7 @@ name: pc2
 2) Le produit échangé est homogène (les offreurs vendent un produit identique)  
 --
 
-  - 1&2 sous-entend que les comportements des acteurs n’affectent pas le prix du marché  
+  &rarr; 1&2 sous-entend que les comportements des acteurs n’affectent pas le prix du marché  
 
 ---
 template: pc2  
@@ -577,15 +577,15 @@ __P x Q__
 <br>
 Pour les __coûts__, il est conventionnel de modéliser un coût marginal (marginal cost, MC) croissant pour l’entreprise en contexte de compétition parfaite. P.ex : __MC<sub>Q</sub> = 2Q__ 
 
-MC(Q=1) = 2 &rarr; Produire 1 unité augmente le coût total de 2  
-MC(Q=2) = 4 &rarr; Produire 1 unité augmente le coût total de 4  
-MC(Q=3) = 6 &rarr; Produire 1 unité augmente le coût total de 6  
+MC<sub>(Q=1)</sub> = 2 &rarr; Produire 1 unité augmente le coût total de 2  
+MC<sub>(Q=2)</sub> = 4 &rarr; Produire 1 unité augmente le coût total de 4  
+MC<sub>(Q=3)</sub> = 6 &rarr; Produire 1 unité augmente le coût total de 6  
 * Quel est le coût total de produire Q = 3? 
 --
 __TC<sub>Q=3</sub> = 2+4+6 = 12__  
 --
 
-* Quel est le coût total de produire Q=5?
+* Quel est le coût total de produire Q = 5?
 --
 
 __TC<sub>Q=5</sub> = 2 + 4 + 6 + (2*4) + (2*5) = 2+4+6+8+10 = 30__  
@@ -667,7 +667,7 @@ On pose la même situation qu’avec l’entreprise, mais cette fois-ci côté d
 * L’analyse du bénéfice marginal est plus claire  
 * A l’intersection de MB et MC, la prochaine unité de soins consommée fournira un bénéfice (une utilité) inférieur au coût engendré  
 * MC est constant puisque MC = P dans les conditions de compétition parfaite (suffisamment d’offre et de demande pour ne pas affecter le prix)
-.footnote[Source figure: Dr M. Skellern; LSE]]  
+.footnote[Source figure: Dr M. Skellern LSE]]  
 
 
 ---
@@ -816,7 +816,7 @@ class: middle, center
 ## .center[Le concept de diminishing marginal utility]  
 * Derrière la notion de diminution marginale de l’utilité se cache un concept très intéressant et polyvalent pour analyser la distribution et l’utilisation des ressources en santé.  
 * Concept qui doit être intuitif:  
-  * Manger 1 hamburger apporte plus de plaisir/satiété (=utilité) que le 4e burger.  
+  * Manger 1 hamburger apporte plus de plaisir/satiété (= utilité) que le 4e burger.  
   * Offrir une consultation de médecine générale à un individu SDF lui apportera plus d’utilité qu’à un individu suivi régulièrement.  
   * En somme: plus on consomme d’un bien, moins on en retire d’utilité.  
 * Concept très facilement observé dans le monde réel car très en phase avec la nature humaine  
@@ -1000,6 +1000,10 @@ background-position: 5% 80%
 .pull-right-30[
 * En maintenant l’assurance totale, l’assureur peut proposer une offre «injuste» en abusant __l’aversion au risque__  
 * Il peut faire payer à l’assuré p<sub>e</sub> + l]
+--
+background-image: url(https://media0.giphy.com/media/y6Inkaz7omxAk/giphy.gif), url(index_files/adds/insurance2.png)
+background-size: 20%, 78%
+background-position: 95% 5%, 5% 80%
 
 ---
 # .center[Echecs du marché de l’assurance]
@@ -1241,10 +1245,13 @@ Deux grandes formes de réponse à l’antisélection:
 
 ---
 class: center, middle
+background-image: url(https://media1.giphy.com/media/ffzhLUixCtlsc/giphy.gif?cid=ecf05e478858dd4b26016f4d8cdfc9312f60cc5db88b1a43&rid=giphy.gif)
+background-size: 15%
+background-position: 50% 80%
 
 # On s’arrête là?
 --
-
+background-image: NULL
 ## Questions?
 --
 
